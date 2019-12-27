@@ -52,10 +52,10 @@ public class Operadores {
                 unitarios();
                 break;
             case 3:
-            asignacion();
+                asignacion();
                 break;
             case 4:
-                soonPart();
+                relacionales();
                 break;
             case 5:
                 soonPart();
@@ -95,7 +95,7 @@ public class Operadores {
     }
 
     public static void asignacion() {
-        
+
         String definition = ANSI_YELLOW + "Este operador se usa para asignar un valor a cualquier variable."
                 + "Tiene una asociación de derecha a izquierda, es decir, el valor dado en el lado derecho del operador se asigna a la variable de la izquierda y, por lo tanto, el valor del lado derecho debe declararse antes de usarlo o debe ser una constante."
                 + ANSI_RESET;
@@ -103,6 +103,20 @@ public class Operadores {
         System.out.println("int numero = 5 + 3");
         int numero = 5 + 3;
         System.out.println("numero =" + numero);
+    }
+
+    public static void relacionales() {
+
+        String definition = ANSI_YELLOW
+                + "Estos operadores siempre devulven un valor booleano, true o false (verdadero o falso), haciendo una comparación de expresiones. Se usan en estructuras de comparación."
+                + ANSI_RESET;
+        System.out.println(definition);
+        System.out.println("Devuelve verdadero si el dato izquierdo es igual al derecho: 3 == 3? " + (3 == 3));
+        System.out.println("Devuelve verdadero si el dato izquierdo NO es igual al derecho: 3 != 4? " + (3 != 4));
+        System.out.println("Devuelve verdadero si el dato izquierdo es menor al derecho: 3 < 4? " + (3 < 4));
+        System.out.println("Devuelve verdadero si el dato izquierdo es menor o igual al derecho: 3 <= 3? " + (3 <= 3));
+        System.out.println("Devuelve verdadero si el dato izquierdo es mayor al derecho: 3 > 4? " + (3 > 4));
+        System.out.println("Devuelve verdadero si el dato izquierdo es mayor o igual al derecho: 3 >= 4? " + (3 >= 4));
     }
 
     public static void soonPart() {
