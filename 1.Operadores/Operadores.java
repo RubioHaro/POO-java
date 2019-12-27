@@ -28,10 +28,9 @@ public class Operadores {
             System.out.println("2) Operadores unarios");
             System.out.println("3) Operador de asignación");
             System.out.println("4) Operadores relacionales");
-            System.out.println("5) Operadores unarios");
+            System.out.println("5) Operadores lógicos");
 
             // https://javadesdecero.es/basico/operadores-en-java-ejemplos/#1_Operadores_aritmeticos
-            // Operadores lógicos
             // Operador ternario
             // Operadores bit a bit
             // Operadores shift
@@ -58,7 +57,7 @@ public class Operadores {
                 relacionales();
                 break;
             case 5:
-                soonPart();
+                logicos();
                 break;
             default:
                 System.out.println(ANSI_RED + "No se ha seleccionado una opcion valida  >:c" + ANSI_RESET);
@@ -117,6 +116,16 @@ public class Operadores {
         System.out.println("Devuelve verdadero si el dato izquierdo es menor o igual al derecho: 3 <= 3? " + (3 <= 3));
         System.out.println("Devuelve verdadero si el dato izquierdo es mayor al derecho: 3 > 4? " + (3 > 4));
         System.out.println("Devuelve verdadero si el dato izquierdo es mayor o igual al derecho: 3 >= 4? " + (3 >= 4));
+    }
+
+    public static void logicos() {
+
+        String definition = ANSI_YELLOW + "Sirven para realizar las operaciones lógicas 'AND' y 'OR'." + ANSI_RESET;
+        System.out.println(definition);
+        System.out.println("AND, devuelve verdadero cuando ambas condiciones son verdaderas. verdadero && falso ="
+                + (true && false));
+        System.out.println(
+                "OR, devuelve verdadero si al menos una de las dos condiciones. verdadero || falso" + (true || false));
     }
 
     public static void soonPart() {

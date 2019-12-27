@@ -64,3 +64,10 @@ Estos operadores siempre devulven un valor booleano, true o false (verdadero o f
 - Devuelve verdadero si el dato izquierdo menor o igual que el derecho: <= (Menor o igual que)
 - Devuelve verdadero si el dato izquierdo es mayor que el derecho: > (Mayor que)
 - Devuelve verdadero si el dato izquierdo es mayor o igual que el derecho: >= (Mayor o igual que)
+
+## Operadores lógicos
+
+Sirven para realizar las operaciones lógicas "AND" y "OR".
+
+- AND, devuelve verdadero cuando ambas condiciones son verdaderas. Se usan los simbolos &&
+- OR, devuelve verdadero si al menos una de las dos condiciones. Se usan los simbolos ||
