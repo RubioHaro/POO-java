@@ -33,8 +33,7 @@ Se utilizan para realizar operaciones aritmeticas simples en tipos de datos prim
 
 Se utilizan para operar solamente un dato. Son usados para incrementar, disminuir o negar un valor.
 
-- Convertir en negativo un valor: -
-- Convertir en positivo un valor: +
+- Cambiar el signo de un numero: -
 - Incrementar un valor en uno: ++
 - Reducir un valor en uno: --
 - Negar un valor, invierte un valor booleano: !
