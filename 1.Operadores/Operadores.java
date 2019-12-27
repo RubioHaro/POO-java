@@ -52,7 +52,7 @@ public class Operadores {
                 unitarios();
                 break;
             case 3:
-                soonPart();
+            asignacion();
                 break;
             case 4:
                 soonPart();
@@ -92,6 +92,17 @@ public class Operadores {
         System.out.println("Reducir un valor en uno: --" + num + " = " + (--num));
         System.out.println("Negar un valor, invierte un valor booleano: !true = " + !true);
 
+    }
+
+    public static void asignacion() {
+        
+        String definition = ANSI_YELLOW + "Este operador se usa para asignar un valor a cualquier variable."
+                + "Tiene una asociación de derecha a izquierda, es decir, el valor dado en el lado derecho del operador se asigna a la variable de la izquierda y, por lo tanto, el valor del lado derecho debe declararse antes de usarlo o debe ser una constante."
+                + ANSI_RESET;
+        System.out.println(definition);
+        System.out.println("int numero = 5 + 3");
+        int numero = 5 + 3;
+        System.out.println("numero =" + numero);
     }
 
     public static void soonPart() {
