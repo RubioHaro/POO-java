@@ -29,6 +29,7 @@ public class Operadores {
             System.out.println("3) Operador de asignación");
             System.out.println("4) Operadores relacionales");
             System.out.println("5) Operadores lógicos");
+            System.out.println("6) Operador ternario");
 
             // https://javadesdecero.es/basico/operadores-en-java-ejemplos/#1_Operadores_aritmeticos
             // Operador ternario
@@ -58,6 +59,9 @@ public class Operadores {
                 break;
             case 5:
                 logicos();
+                break;
+            case 6:
+                ternario();
                 break;
             default:
                 System.out.println(ANSI_RED + "No se ha seleccionado una opcion valida  >:c" + ANSI_RESET);
@@ -126,6 +130,18 @@ public class Operadores {
                 + (true && false));
         System.out.println(
                 "OR, devuelve verdadero si al menos una de las dos condiciones. verdadero || falso" + (true || false));
+    }
+
+    public static void ternario() {
+
+        String definition = ANSI_YELLOW
+                + "Sirve para abreviar la estructura if-else. Es llamado ternario debido a los tres operadores que contiene. \n condición ? if true : if false"
+                + ANSI_RESET;
+        System.out.println(definition);
+        System.out.println("condicion = true");
+        boolean condicion = true;
+        System.out.println("(condicion)? true: false");
+        System.out.println("resultado: " + ((condicion) ? true : false));
     }
 
     public static void soonPart() {

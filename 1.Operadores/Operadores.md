@@ -71,3 +71,9 @@ Sirven para realizar las operaciones lógicas "AND" y "OR".
 
 - AND, devuelve verdadero cuando ambas condiciones son verdaderas. Se usan los simbolos &&
 - OR, devuelve verdadero si al menos una de las dos condiciones. Se usan los simbolos ||
+
+## Operador ternario
+
+Sirve para abreviar la estructura if-else. Es llamado ternario debido a los tres operadores que contiene.
+
+- condición ? if true : if false
