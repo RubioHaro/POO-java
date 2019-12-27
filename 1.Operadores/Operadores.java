@@ -49,7 +49,7 @@ public class Operadores {
                 aritmeticos();
                 break;
             case 2:
-                soonPart();
+                unitarios();
                 break;
             case 3:
                 soonPart();
@@ -78,6 +78,19 @@ public class Operadores {
         System.out.println("Multiplicacion: 5 * 4 = " + 5 * 4);
         System.out.println("Division: 5 / 4 = " + 5 / 4);
         System.out.println("Modulo: 5 % 4 = " + 5 % 4);
+
+    }
+
+    public static void unitarios() {
+        int num = 5;
+        String definition = ANSI_YELLOW
+                + "Se utilizan para operar solamente un dato. Son usados para incrementar, disminuir o negar un valor."
+                + ANSI_RESET;
+        System.out.println(definition);
+        System.out.println("Cambiar el signo de un numero: -(-5) = " + (-(-5)));
+        System.out.println("Incrementar un valor en uno: ++: ++5 =" + (++num));
+        System.out.println("Reducir un valor en uno: --" + num + " = " + (--num));
+        System.out.println("Negar un valor, invierte un valor booleano: !true = " + !true);
 
     }
 
