@@ -30,13 +30,12 @@ public class Operadores {
             System.out.println("4) Operadores relacionales");
             System.out.println("5) Operadores lógicos");
             System.out.println("6) Operador ternario");
+            System.out.println("7) Operadores bit a bit");
+            System.out.println("8) Operadores shift");
+            System.out.println("9) Operador de instancia");
+            System.out.println("10) Precedencia y Asociatividad de Operadores");
 
             // https://javadesdecero.es/basico/operadores-en-java-ejemplos/#1_Operadores_aritmeticos
-            // Operador ternario
-            // Operadores bit a bit
-            // Operadores shift
-            // Operador de instancia
-            // Precedencia y Asociatividad de Operadores
 
             System.out.println("============================================" + ANSI_GREEN);
 
@@ -62,6 +61,17 @@ public class Operadores {
                 break;
             case 6:
                 ternario();
+                break;
+            case 7:
+                soonPart();
+                break;
+            case 8:
+                soonPart();
+                break;
+            case 9:
+                soonPart();
+            case 10:
+                soonPart();
                 break;
             default:
                 System.out.println(ANSI_RED + "No se ha seleccionado una opcion valida  >:c" + ANSI_RESET);
