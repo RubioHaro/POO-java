@@ -77,3 +77,12 @@ Sirven para realizar las operaciones lógicas "AND" y "OR".
 Sirve para abreviar la estructura if-else. Es llamado ternario debido a los tres operadores que contiene.
 
 - condición ? if true : if false
+
+## Operadores bit a bit
+
+Los operadores a nivel de bits se utilizan para realizar la manipulación de bits individuales de un número. Se pueden usar con cualquiera de los tipos enteros. Se utilizan al realizar operaciones de actualización y consulta de árbol indexado binario. Resultaran fáciles de entender si ya se conocen los operadores lógicos, puesto que es su aplicación en bits.
+
+- Operador AND, si ambos bits de entrada son 1, el resultado es 1. De lo contrario será 0: &
+- Operador OR, si algún bit de entrada es 1, el resultado es 1. De lo contrario será 0: |
+- Operador XOR, si uno de los bits es 0 y el otro es 1, el resultado es 1. Si ambos bits son iguales entonces será 0: ^
+- Operador NOT, este operador unario invierte los bits: ~

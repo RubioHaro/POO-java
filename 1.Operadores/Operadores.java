@@ -63,7 +63,7 @@ public class Operadores {
                 ternario();
                 break;
             case 7:
-                soonPart();
+                bitABit();
                 break;
             case 8:
                 soonPart();
@@ -152,6 +152,50 @@ public class Operadores {
         boolean condicion = true;
         System.out.println("(condicion)? true: false");
         System.out.println("resultado: " + ((condicion) ? true : false));
+    }
+
+    public static void bitABit() {
+
+        String definition = ANSI_YELLOW
+                + "Los operadores a nivel de bits se utilizan para realizar la manipulación de bits individuales de un número. Se pueden usar con cualquiera de los tipos enteros. Se utilizan al realizar operaciones de actualización y consulta de árbol indexado binario. Resultaran fáciles de entender si ya se conocen los operadores lógicos, puesto que es su aplicación en bits."
+                + ANSI_RESET;
+        System.out.println(definition);
+
+        int a = 0x0005;
+        int b = 0x0007;
+
+        System.out.println("int a = 0x0005; \nint b = 0x0007;");
+
+        // bitwise AND
+        // 0101 & 0111=0101
+
+        System.out.println(" a & b = " + (a & b));
+
+        System.out.println(" 0101 & 0111=0101 \n");
+        // bitwise or
+        // 0101 | 0111=0111
+
+        System.out.println(" a | b = " + (a | b));
+
+        System.out.println(" 0101 | 0111=0111 \n");
+        // bitwise xor
+        // 0101 ^ 0111=0010
+
+        System.out.println(" a ^ b = " + (a ^ b));
+
+        System.out.println(" 0101 ^ 0111=0010 \n");
+        // bitwise complemento
+        // ~0101=1010
+
+        System.out.println(" ~ a = " + ~a);
+
+        System.out.println(" ~0101=1010 \n");
+        // también se puede combinar con el
+        // operador de asignación
+        // a=a&b
+        a &= b;
+        System.out.println(" a = " + a);
+
     }
 
     public static void soonPart() {
