@@ -86,3 +86,11 @@ Los operadores a nivel de bits se utilizan para realizar la manipulación de bit
 - Operador OR, si algún bit de entrada es 1, el resultado es 1. De lo contrario será 0: |
 - Operador XOR, si uno de los bits es 0 y el otro es 1, el resultado es 1. Si ambos bits son iguales entonces será 0: ^
 - Operador NOT, este operador unario invierte los bits: ~
+
+## Operadores shift
+
+Los operadores shift de Java se usan para desplazar los bits de un número hacia la izquierda o hacia la derecha, multiplicando o dividiendo el número por dos, respectivamente. Se pueden usar cuando tenemos que multiplicar o dividir un número por dos.
+
+- Operador de desplazamiento a la izquierda : desplaza los bits del número hacia la izquierda y llena con “0” los bits desplazados. Efecto similar a la multiplicación del número con una potencia de dos. <<
+- Operador de desplazamiento a la derecha firmado: desplaza los bits del número a la derecha y llena con “0” los bits desplazados. El bit más a la izquierda depende del signo del número inicial. Efecto similar a partir de dividir el número con alguna potencia de dos. >>
+- Operador de cambio a la derecha sin signo: desplaza los bits del número a la derecha y llena con “0” los bits desplazados. El bit más a la izquierda se establece en 0. >>>
