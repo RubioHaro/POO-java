@@ -94,3 +94,9 @@ Los operadores shift de Java se usan para desplazar los bits de un número hacia
 - Operador de desplazamiento a la izquierda : desplaza los bits del número hacia la izquierda y llena con “0” los bits desplazados. Efecto similar a la multiplicación del número con una potencia de dos. <<
 - Operador de desplazamiento a la derecha firmado: desplaza los bits del número a la derecha y llena con “0” los bits desplazados. El bit más a la izquierda depende del signo del número inicial. Efecto similar a partir de dividir el número con alguna potencia de dos. >>
 - Operador de cambio a la derecha sin signo: desplaza los bits del número a la derecha y llena con “0” los bits desplazados. El bit más a la izquierda se establece en 0. >>>
+
+## Operador de Instancia
+
+El operador de instancia se usa para verificar el tipo. Se puede usar para probar si un objeto es una instancia de una clase, una subclase o una interfaz.
+
+- objecto instanceof class/subclass/interface

@@ -69,7 +69,8 @@ public class Operadores {
                 shift();
                 break;
             case 9:
-                soonPart();
+                instancia();
+                break;
             case 10:
                 soonPart();
                 break;
@@ -220,6 +221,42 @@ public class Operadores {
 
         // operador de cambio a la derecha sin firmar
         System.out.println("b>>>2 = " + (b >>> 2));
+    }
+
+    static class Person {
+
+    }
+
+    static interface MyInterface {
+
+    }
+
+    static class Boy extends Person implements MyInterface {
+
+    }
+
+    public static void instancia() {
+
+        String definition = ANSI_YELLOW
+                + "El operador de instancia se usa para verificar el tipo. Se puede usar para probar si un objeto es una instancia de una clase, una subclase o una interfaz."
+                + ANSI_RESET;
+        System.out.println(definition);
+
+        Person obj1 = new Person();
+        Person obj2 = new Boy();
+
+        // Como obj1 es de tipo Person, no es una
+        // instancia de Boy o interfaz
+        System.out.println("obj1 instanceof Person: " + (obj1 instanceof Person));
+        System.out.println("obj1 instanceof Boy: " + (obj1 instanceof Boy));
+        System.out.println("obj1 instanceof MyInterface: " + (obj1 instanceof MyInterface));
+
+        // Dado que obj2 es de tipo Boy, cuya clase padre es
+        // Person e implementa la interfaz Myinterface
+        // es una instancia de todas estas clases
+        System.out.println("obj2 instanceof Person: " + (obj2 instanceof Person));
+        System.out.println("obj2 instanceof Boy: " + (obj2 instanceof Boy));
+        System.out.println("obj2 instanceof MyInterface: " + (obj2 instanceof MyInterface));
     }
 
     public static void soonPart() {
