@@ -6,4 +6,4 @@ Upcasting : cuando queremos convertir una Subclase en Súper clase, utilizamos U
 
 Downcasting : cuando queremos lanzar una clase Super a Sub class, utilizamos Downcasting. Normalmente es más común el uso de Downcasting.
 
-![diagrama](/java/2.POO/11.Casting/diagram.png)
+![diagrama](/diagram.png)
